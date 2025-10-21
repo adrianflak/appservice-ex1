@@ -19,7 +19,7 @@ jobs:
         npm run test --if-present
 
     - name: 'Run Azure webapp deploy action using publish profile credentials'
-      uses: azure/webapps-deploy@v4
+      uses: azure/webapps-deploy@v3
       with:
         app-name: htmlex2
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
